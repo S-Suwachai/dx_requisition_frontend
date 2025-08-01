@@ -1,15 +1,25 @@
+import CardMetric from "@/components/common/CardMetric";
 import type { Metadata } from "next";
+import { CheckCircleIcon, DocsIcon, PencilIcon, TimeIcon } from "@/icons";
+import BasicTableOne from "@/components/tables/BasicTableOne";
 
 export const metadata: Metadata = {
-  title:
-    "DX Job Requisition",
+  title: "DX Job Requisition",
   description: "DX Job Requisition",
 };
 
 export default function Home() {
   return (
-    <div className="grid grid-cols-12 gap-4 md:gap-6">
-      <div className="col-span-12 space-y-6 xl:col-span-7">TEST</div>
+    <div className="grid gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
+        <CardMetric icon={<DocsIcon />} icon_color="bg-gray-100" topic={"Total request Job"} count={20} progress={1} />
+        <CardMetric icon={<CheckCircleIcon />} icon_color="bg-green-100" topic={"Completed job"} count={5} progress={0} />
+        <CardMetric icon={<TimeIcon />} icon_color="bg-yellow-100" topic={"In progress"} count={20} progress={1} />
+        <CardMetric icon={<PencilIcon />} icon_color="bg-orange-100" topic={"In approval process"} count={20} progress={1} />
+      </div>
+			<div className="space-y-6">
+				<BasicTableOne />
+			</div>
     </div>
   );
 }
