@@ -1,7 +1,7 @@
 "use client";
 import type { ReactNode } from "react";
 import Badge from "../ui/badge/Badge";
-import { ArrowUpIcon, DocsIcon } from "@/icons";
+import { ArrowUpIcon } from "@/icons";
 
 interface CardMetricProps {
   icon: ReactNode;

@@ -1,7 +1,6 @@
 import CardMetric from "@/components/common/CardMetric";
 import type { Metadata } from "next";
 import { CheckCircleIcon, DocsIcon, PencilIcon, TimeIcon } from "@/icons";
-import BasicTableOne from "@/components/tables/BasicTableOne";
 
 export const metadata: Metadata = {
   title: "DX Job Requisition",
@@ -18,7 +17,6 @@ export default function Home() {
         <CardMetric icon={<PencilIcon />} icon_color="bg-orange-100" topic={"In approval process"} count={20} progress={1} />
       </div>
 			<div className="space-y-6">
-				<BasicTableOne />
 			</div>
     </div>
   );
