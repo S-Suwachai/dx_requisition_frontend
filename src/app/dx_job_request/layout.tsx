@@ -20,7 +20,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     {
       icon: <PencilIcon />,
       name: "New Request",
-      path: `/${pathname.split("/")[1]}/create_request`,
+      path: `/${pathname.split("/")[1]}/new_request`,
     },
     {
       icon: <PaperPlaneIcon />,

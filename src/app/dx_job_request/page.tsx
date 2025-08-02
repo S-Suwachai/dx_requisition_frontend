@@ -1,13 +1,13 @@
 import CardMetric from "@/components/common/CardMetric";
-import type { Metadata } from "next";
 import { CheckCircleIcon, DocsIcon, PencilIcon, TimeIcon } from "@/icons";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "DX Job Request",
   description: "DX Job Request",
 };
 
-export default function Home() {
+export default function JobRequestHomePage() {
   return (
     <div className="grid gap-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">

@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useSidebar } from "../context/SidebarContext";
-import { ChevronDownIcon, HorizontaLDots } from "../icons/index";
+import { ChevronDownIcon, HorizontalDots } from "../icons/index";
 
 type AppSidebarProps = {
   navItems: NavItem[];
@@ -190,7 +190,7 @@ const AppSidebar: React.FC<AppSidebarProps> = ({ navItems }) => {
                   !isExpanded && !isHovered ? "lg:justify-center" : "justify-start"
                 }`}
               >
-                {isExpanded || isHovered || isMobileOpen ? "Menu" : <HorizontaLDots />}
+                {isExpanded || isHovered || isMobileOpen ? "Menu" : <HorizontalDots />}
               </h2>
               {renderMenuItems(navItems, "main")}
             </div>
