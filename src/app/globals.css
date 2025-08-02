@@ -738,3 +738,11 @@ span.flatpickr-weekday,
   opacity: 0.8;
   cursor: grabbing; /* Changes the cursor to indicate dragging */
 }
+
+
+/* Custom CSS */
+.custom-table .ant-table-thead > tr > th {
+  background-color: #FAF0E6 !important; /* ตัวอย่าง: สีเหลืองอ่อน */
+  color: #1f2937 !important; /* ตัวอย่าง: สีเทาเข้ม */
+  font-weight: 600;
+}

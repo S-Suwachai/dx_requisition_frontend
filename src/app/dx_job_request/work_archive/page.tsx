@@ -1,7 +1,10 @@
-import React from 'react'
+import PageBreadcrumb from "@/components/common/PageBreadCrumb";
+import React from "react";
 
 export default function WorkArchivePage() {
   return (
-    <div>work archive</div>
-  )
+    <div>
+      <PageBreadcrumb pageTitle="Work archive" />
+    </div>
+  );
 }

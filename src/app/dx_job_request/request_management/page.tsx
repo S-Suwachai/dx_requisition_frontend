@@ -1,7 +1,10 @@
-import React from 'react'
+import PageBreadcrumb from "@/components/common/PageBreadCrumb";
+import React from "react";
 
 export default function RequestManagementPage() {
   return (
-    <div>Request Management</div>
-  )
+    <div>
+      <PageBreadcrumb pageTitle="Request Management" />
+    </div>
+  );
 }
