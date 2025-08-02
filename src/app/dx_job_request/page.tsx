@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import { CheckCircleIcon, DocsIcon, PencilIcon, TimeIcon } from "@/icons";
 
 export const metadata: Metadata = {
-  title: "DX Job Requisition",
-  description: "DX Job Requisition",
+  title: "DX Job Request",
+  description: "DX Job Request",
 };
 
 export default function Home() {

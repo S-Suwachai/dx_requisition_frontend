@@ -20,17 +20,17 @@ export default function Home() {
       <div className="text-center">Factory</div>
       <hr />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-8 md:gap-10 mb-10">
-        <CardTitle title={"NAT"} />
-        <CardTitle title={"NHT"} />
-        <CardTitle title={"NMB"} />
-        <CardTitle title={"PELMEC"} />
-        <CardTitle title={"NHB"} />
-        <CardTitle title={"MCB"} />
+        <CardTitle title={"NAT"} path={"/"} />
+        <CardTitle title={"NHT"} path={"/"} />
+        <CardTitle title={"NMB"} path={"/"} />
+        <CardTitle title={"PELMEC"} path={"/"} />
+        <CardTitle title={"NHB"} path={"/"} />
+        <CardTitle title={"MCB"} path={"/"} />
       </div>
-      <div className="text-center">Application</div>
+      <div className="text-center">Application Center</div>
       <hr />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 md:gap-10 mb-10">
-        <CardTitle title={"DX Job Request"} />
+        <CardTitle title={"DX Job Request"} path={"http://localhost:3000/dx_job_request"}/>
       </div>
     </div>
   );

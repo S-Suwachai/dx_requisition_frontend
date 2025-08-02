@@ -1,17 +1,14 @@
 "use client";
 import React from "react";
-import { useRouter } from "next/navigation";
 
 interface CardTitleProps {
   title: string;
+  path: string,
 }
 
-const CardTitle: React.FC<CardTitleProps> = ({ title }) => {
-  const router = useRouter();
-
+const CardTitle: React.FC<CardTitleProps> = ({ title, path }) => {
   const handleClick = () => {
-    const path = "/" + title.toLowerCase().replace(/\s+/g, "-");
-    window.open(path, "_blank");
+    window.open(path);
   };
 
   return (
