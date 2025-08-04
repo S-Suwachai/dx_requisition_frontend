@@ -1,10 +1,9 @@
 "use client";
 import CardMetric from "@/components/common/CardMetric";
 import { CheckCircleIcon, DocsIcon } from "@/icons";
-import { CodeOutlined, FormOutlined, SignatureOutlined } from "@ant-design/icons";
+import { CodeOutlined, FormOutlined, SignatureOutlined, SolutionOutlined } from "@ant-design/icons";
 import { Button, Table, Steps } from "antd";
 import type { TableProps } from "antd";
-import { SolutionOutlined } from "@ant-design/icons";
 import React from "react";
 
 interface DataType {
@@ -85,7 +84,6 @@ const columns: TableProps<DataType>["columns"] = [
         <Steps
           size="small"
           current={currentStepIndex === -1 ? 0 : currentStepIndex}
-          // className="custom-steps"
           items={stepItems.map((item, index) => ({
             ...item,
             status: index < currentStepIndex ? "finish" : index === currentStepIndex ? "process" : "wait",
